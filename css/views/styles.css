@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Raleway&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 99%;
+    background-color: #222831;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.intro-section {
+    text-align: center;
+    margin: 1.5em;
+}
+.intro-name {
+    color: #FF5722;
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.intro-pronouns {
+    color: #eee;
+    font-family: "Raleway";
+    font-size: 1.25em;
+    font-weight: 100;
+}
+
+nav li {
+    display: inline-block;
+}
