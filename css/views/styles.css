@@ -6,7 +6,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 99%;
+    height: 100%;
     background-color: #222831;
 }
 
@@ -21,12 +21,15 @@ html, body {
 .intro-section {
     text-align: center;
     margin: 1.5em;
+    border-bottom: solid 2px #eee;
+    padding-bottom: 1em;
 }
 .intro-name {
     color: #FF5722;
     font-family: "Comfortaa";
     font-weight: bold;
     font-size: 4em;
+    margin-bottom: 0.25em;
 }
 
 .intro-pronouns {
@@ -36,6 +39,29 @@ html, body {
     font-weight: 100;
 }
 
+nav ul {
+    padding: 0;
+    margin-top: 0;
+}
+
 nav li {
     display: inline-block;
+    margin: 1em;
+}
+
+.nav-links svg {
+    color:#2D4059;
+    width: 48px;
+    -moz-transition: color .2s ease-out;
+    -o-transition: color .2s ease-out;
+    -webkit-transition: color .2s ease-out;
+    transition: color .2s ease-out;
+}
+
+.nav-links svg:hover {
+    color:#FF5722;
+    -moz-transition: color .2s ease-in;
+    -o-transition: color .2s ease-in;
+    -webkit-transition: color .2s ease-in;
+    transition: color .2s ease-in;
 }
