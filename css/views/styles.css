@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
 }
+
 html, body {
     margin: 0;
     padding: 0;
@@ -24,6 +25,7 @@ html, body {
     border-bottom: solid 2px #eee;
     padding-bottom: 1em;
 }
+
 .intro-name {
     color: #FF5722;
     font-family: "Comfortaa";
@@ -56,6 +58,9 @@ nav li {
     -o-transition: color .2s ease-out;
     -webkit-transition: color .2s ease-out;
     transition: color .2s ease-out;
+    position: relative;
+    transition: top .2s ease-out;
+    top: 0;
 }
 
 .nav-links svg:hover {
@@ -64,4 +69,7 @@ nav li {
     -o-transition: color .2s ease-in;
     -webkit-transition: color .2s ease-in;
     transition: color .2s ease-in;
+    transition: top .1s ease-in;
+    top: -2px;
+    filter: drop-shadow(2px 2px black);
 }
