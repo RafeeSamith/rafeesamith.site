@@ -123,3 +123,12 @@ h1 {
     font-family: "Comfortaa";
     border-bottom: 1px solid #eee;
 }
+
+.rolling-rick {
+    width: 100%;
+    height: 100%;
+}
+
+.h1-roll {
+    color: #eee;
+}
