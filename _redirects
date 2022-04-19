@@ -1,2 +1,6 @@
+from cgitb import html
+
+
 /*              /index.html     302
 /about/*        /about.html     302
+/about-me/*     /about-me.html  302
