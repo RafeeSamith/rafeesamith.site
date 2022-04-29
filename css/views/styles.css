@@ -4,10 +4,14 @@
     box-sizing: border-box;
 }
 
+.html-index, .body-index{
+    height: 90%;
+}
+
 html, body {
     margin: 0;
     padding: 0;
-    height: 93%;
+    height: auto;
     background-color: #222831;
     font-family: "Raleway";
     color: #ddd;
@@ -130,7 +134,7 @@ h1 {
     padding-left: 2em;
     padding-right: 2em;
     margin: 4em auto;
-    max-width: 900px;
+    max-width: 1080px;
 }
 
 .section-content div {
@@ -142,6 +146,18 @@ h1 {
     font-size: 3em;
     font-family: "Comfortaa";
     border-bottom: 1px solid #eee;
+}
+
+.setup-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.img-setup {
+    height: 550px;
+    margin-right: 1em;
+    margin-left: 0;
 }
 
 .rolling-rick {
@@ -156,4 +172,3 @@ h1 {
 .about-text {
     line-height: 1.5em;
 }
-
