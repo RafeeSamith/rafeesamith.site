@@ -13,16 +13,34 @@ html, body {
     color: #ddd;
 }
 
+header {
+    padding: 0.5em;
+    display: flex;
+}
+
+a {
+    color:#FF4C29;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav-main {
+    width: 100%;
+}
+
 .nav-main ul {
     display: flex;
-    margin: 0 1em;
     align-items: center;
-    border-bottom: 1px solid black;
+    margin-bottom: 0;
 }
 
 .nav-main li {
     display: inline;
     margin: 0;
+    padding: 0 5px;
 }
 
 .nav-main a {
@@ -34,10 +52,6 @@ html, body {
 
 .nav-text a:hover {
     background-color: rgb(45, 64, 89);
-}
-
-.nav-main li {
-    padding: 0 5px;
 }
 
 .pfp img {
@@ -61,7 +75,7 @@ html, body {
 }
 
 .intro-name {
-    color: #FF5722;
+    color: #FF4C29;
     font-family: "Comfortaa";
     font-weight: bold;
     font-size: 4em;
@@ -103,7 +117,7 @@ h1 {
 }
 
 .nav-links svg:hover {
-    color:#FF5722;
+    color:#FF4C29;
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
@@ -113,8 +127,14 @@ h1 {
 }
 
 .section-content {
+    padding-left: 2em;
+    padding-right: 2em;
     margin: 4em auto;
-    max-width: 80%;
+    max-width: 900px;
+}
+
+.section-content div {
+    margin-bottom: 1em;
 }
 
 .section-header {
@@ -132,3 +152,8 @@ h1 {
 .h1-roll {
     color: #eee;
 }
+
+.about-text {
+    line-height: 1.5em;
+}
+
