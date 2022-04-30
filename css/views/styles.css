@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.html-index, .body-index{
+.html-center, .body-center{
     height: 90%;
 }
 
@@ -171,4 +171,11 @@ h1 {
 
 .about-text {
     line-height: 1.5em;
+}
+
+footer {
+    display: flex;
+    background-color: #2D4059;
+    padding: 1em;
+    justify-content: end;
 }
