@@ -1,2 +1,3 @@
+#Redirects to remove .html
 /about/*        /about.html     301
 /about-me/*     /about-me.html  301
