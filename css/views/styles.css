@@ -92,8 +92,10 @@ a:hover {
 }
 
 nav ul {
+    display: flex;
     padding: 0;
     margin-top: 0;
+    flex-wrap: wrap;
 }
 
 nav li {
@@ -103,6 +105,12 @@ nav li {
 
 h1 {
     margin-top: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-links svg {

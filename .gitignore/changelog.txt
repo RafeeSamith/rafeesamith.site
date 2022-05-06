@@ -1,0 +1,4 @@
+06-05-2022:
+    =changed white link logos to #eee
+    +added HWBot and Instagram links
+    =fixed nav wraps
