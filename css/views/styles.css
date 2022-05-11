@@ -27,19 +27,23 @@ a:hover {
 }
 
 .nav-main {
-    width: 100%;
+    width: 400px;
+    margin-right: 1em;
 }
 
 .nav-main ul {
     display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
     align-items: center;
     margin-bottom: 0;
 }
 
 .nav-main li {
-    display: inline;
+    display: flex;
     margin: 0;
-    padding: 0 5px;
+    flex-grow: 1;
+    padding: 0;
 }
 
 .nav-main a {
@@ -186,7 +190,9 @@ footer {
     background-color: #2D4059;
     padding: 1em;
     text-align: end;
+    border-top: 1px solid #FF4C29;
 } 
+
 
 .links-container {
     display: flex;
@@ -205,6 +211,7 @@ footer {
     flex-grow: 1;
     background-repeat: no-repeat;
     background-size: contain;
+    padding-left: 64px;
 }
 
 .btn-link:hover {
