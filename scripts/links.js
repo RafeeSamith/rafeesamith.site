@@ -8,7 +8,6 @@ function ready() {
     var buttons = document.getElementsByClassName("btn-link");
     for (var i = 0; i < buttons.length; i++) {
         var button = buttons[i];
-        console.log(button.classList[1]);
         button.setAttribute("style", `background-image: url("../../images/links/${button.classList[1]}.png")`)
     }
 }
