@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/views/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-main">
+                <ul>       
+                    <li class="pfp"><a href="/"><img src="images/pfp.png"></a></li>                 
+                    <li class="nav-text"><a href="about">About</a></li>
+                    <li class="nav-text"><a href="#">Guides</a></li>
+                    <li class="nav-text"><a href="links.html">Links</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="section-content">
+            <h1 class="section-header">No Display</h1>
+            <div class="guide-description">This guide has been created to help solve issues where the PC turns on (fans spin and things light up) but does not show a signal on the monitor.</div>
+
+            <h3>What do I do?</h3>
+            <ul>
+                <li>Chill out, your components are probably not broken. But if they are, my condolences.</li>
+
+
+            <li>If you have a dedicated GPU: make sure the monitor is plugged into that, NOT into the motherboard, as shown below:</li>
+            
+            Check for any Debug LEDs on the motherboard, they usually look like this:
+            If the DRAM LED is lit up, chances are that the RAM isn't seated in their slots properly (This is one of the most common reasons for no display issues). Take your RAM sticks out of their slots and put only one back into the second slot. Make sure the RAM stick clicks in fully on both sides, you should not be able to see any gold contacts.
+            (also try each stick of RAM in each DIMM slot)
+            If the VGA LED is lit up, it indicates a problem with any PCIe device. Check your GPU and its power connections, NVMe drives (if any) or any other PCIe cards.
+            If you have a CPU with integrated graphics, now would be a good time to pull the GPU out and plug the display into the motherboard instead. (This is for testing if the GPU is the cause of the problem.)
+            If the CPU LED is lit up, check the EPS 8-pin and 24-pin power connections before reseating the CPU.
+            BOOT LED will always light up before the PC has booted into an OS, so disregard it and move on to other steps
+
+            Clear your CMOS, this can be done by either pulling the CMOS battery out, or shorting the CMOS Clear header. Make sure to do this while the PSU is switched off.
+
+            CMOS Battery:
+
+            The CMOS Clear header can either be a 2-pin header or a 3-pin one, refer to your manual (it is sometimes named CLEAR_RTC)
+
+
+
+
+
+
+
+
+
+
+
+            Other Stuff To Try:
+            Try using a different display cable, try using HDMI instead of DisplayPort or vice-versa
+            If your PC isn’t turning on at all: check if the PSU is switched on, if all the power connections are proper and that the front panel connections are proper. Try shorting the PWRBTN# and a GND pin together
+            
+
+
+
+            Credits:
+            Guide by Rafee
+            Discord: @Rafee#4484
+
+
+        </main>
+            
+        <footer>
+            <span>Made with 🧡 by Rafee.</span>
+        </footer>
+    </body>
+</html>

@@ -2,15 +2,71 @@
 
 /* General */
 
+:root {
+    --col-background: #282838;
+    --col-secondary: #383856;
+    --col-accent: #FF4C29;
+}
+
 * {
     box-sizing: border-box;
+}
+
+
+@keyframes background-rainbow {
+    from {
+        background-color: #382828;
+    }
+    17% {
+        background-color: #383828;
+    }
+    33% {
+        background-color: #283828;
+    }
+    50% {
+        background-color: #283838;
+    }
+    67% {
+        background-color: #282838;
+    }
+    83% {
+        background-color: #382838;
+    }
+    100% {
+        background-color: #382828;
+    }
+}
+
+@keyframes color-rainbow {
+    from {
+        color: var(--color, #382828);
+    }
+    17% {
+        color: var(--color, #383828);
+    }
+    33% {
+        color: var(--color, #283828);
+    }
+    50% {
+        color: var(--color, #283838);
+    }
+    67% {
+        color: var(--color, #282838);
+    }
+    83% {
+        color: var(--color, #382838);
+    }
+    100% {
+        color: var(--color, #382828);
+    }
 }
 
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #222831;
-    font-family: "Raleway";
+    background-color: var(--col-background);
+    /*animation: background-rainbow 8s linear 0s infinite;*/
+    font-family: "Montserrat";
     color: #ddd;
 }
 
@@ -21,7 +77,7 @@ header {
 }
 
 a {
-    color:#FF4C29;
+    color:var(--col-accent);
     text-decoration: none;
 }
 
@@ -34,6 +90,11 @@ a:hover {
 .nav-main {
     border-bottom: 1px solid #eee;
     margin-bottom: 2em;
+}
+
+.nav-index {
+    border: none;
+    margin-bottom: 0;
 }
 
 .nav-main ul {
@@ -50,6 +111,7 @@ a:hover {
     margin: 0;
     flex-grow: 1;
     padding: 0;
+    margin-right: auto;
 }
 
 .nav-main a {
@@ -61,13 +123,19 @@ a:hover {
 
 .nav-text a:hover {
     background-color: rgba(0, 0, 0, 0.3);
-
 }
 
 .pfp img {
     width: 64px;
     border-radius: 50%;
 }
+
+.nav-rgb {
+    height: 32px;
+    width: 32px;
+    justify-content: right;
+}
+
 
 /* centered content */
 
@@ -92,7 +160,7 @@ a:hover {
 }
 
 .intro-name {
-    color: #FF4C29;
+    color: var(--col-accent);
     font-family: "Comfortaa";
     font-weight: bold;
     font-size: 4em;
@@ -125,7 +193,9 @@ nav li {
 }
 
 .nav-links svg {
-    color:#2D4059;
+    /*animation: color-rainbow 8s linear 0s infinite;*/
+    color: var(--col-background);
+    filter: brightness(150%);
     width: 48px;
     height: 52px;
     -moz-transition: all .2s ease-out;
@@ -138,7 +208,8 @@ nav li {
 }
 
 .nav-links svg:hover {
-    color:#FF4C29;
+    color: var(--col-accent);
+    --color: var(--col-accent);
     -moz-transition: all .2s ease-out;
     -o-transition: all .2s ease-out;
     -webkit-transition: all .2s ease-out;
@@ -213,7 +284,7 @@ nav li {
     color: #eee;
 }
 
-/* links pagee */
+/* links page */
 
 .links-container {
     display: flex;
@@ -223,8 +294,8 @@ nav li {
 .btn-link {
     height: 64px;
     color: #eee;
-    background-color: #222831;
-    border: 2px solid #2D4059;
+    background-color: var(--col-background);
+    border: 2px solid var(--col-secondary);
     border-radius: 10px;
     font-family: "Comfortaa";
     font-size: 1em;
@@ -237,8 +308,8 @@ nav li {
 
 .btn-link:hover {
     transition: all 0.2s ease-out;
-    background-color: #2D4059;
-    color: #FF4C29;
+    background-color: var(--col-secondary);
+    color: var(--col-accent);
     cursor: pointer;
 }
 
@@ -250,7 +321,7 @@ nav li {
 }
 
 .header-links {
-    background-image: url(../../images/Untitled-1.png);
+    background-image: url(../../images/links/cover.png);
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.33);
     background-blend-mode: darken;
@@ -267,8 +338,8 @@ nav li {
 footer {
     display: block;
     width: 100%;
-    background-color: #2D4059;
+    background-color: var(--col-secondary);
     padding: 1em;
     text-align: end;
-    border-top: 1px solid #FF4C29;
+    border-top: 1px solid var(--col-accent);
 } 
