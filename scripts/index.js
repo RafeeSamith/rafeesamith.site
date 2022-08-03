@@ -67,7 +67,6 @@ function ready() {
     function rgbify(bg, svg, state) {
         bodyElement.style.animation = htmlElement.style.animation = bg;
         for (i = 0; i < svgs.length; i++) {
-            console.log(svgs[i])
             svgs[i].style.animation = svg;
         }
         toggle = state;
