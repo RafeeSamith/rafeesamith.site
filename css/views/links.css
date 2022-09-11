@@ -1,0 +1,39 @@
+/* links page */
+
+.btn-link {
+    height: 64px;
+    color: #eee;
+    background-color: var(--col-background);
+    border: 2px solid var(--col-secondary);
+    border-radius: 10px;
+    font-family: "Comfortaa";
+    font-size: 1em;
+    font-weight: 500;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 64px;
+}
+
+.btn-link:hover {
+    transition: all 0.2s ease-out;
+    background-color: var(--col-secondary);
+    color: var(--col-accent);
+    cursor: pointer;
+}
+
+.links-container a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 1em 0 0;
+}
+
+.links-cover {
+    background-image: url(https://wallpaperaccess.com/full/2154012.jpg);
+}
+
+.content-links {
+    max-width: 1024px;
+    flex-grow: 1;
+}

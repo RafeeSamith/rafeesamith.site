@@ -1,0 +1,71 @@
+/* index page */
+
+.intro-container {
+    height: 85vh;
+}
+
+.intro-section {
+    text-align: center;
+    margin: 1.5em;
+    border-bottom: solid 2px #eee;
+    padding-bottom: 1em;
+}
+
+.intro-name {
+    color: var(--col-accent);
+    font-family: "Comfortaa";
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 0.25em;
+}
+
+.intro-pronouns {
+    color: #eee;
+    font-family: "Raleway";
+    font-size: 1.25em;
+    font-weight: 100;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+    flex-wrap: wrap;
+}
+
+nav li {
+    display: inline-block;
+    margin: 1em;
+}
+
+.nav-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links svg {
+    /*animation: color-rainbow 8s linear 0s infinite;*/
+    color: var(--col-background);
+    filter: brightness(200%);
+    width: 48px;
+    height: 52px;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    position: relative;
+    transition: top .2s ease-out;
+    top: 0;
+}
+
+.nav-links svg:hover {
+    color: var(--col-accent);
+    --color: var(--col-accent);
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    -webkit-transition: all .2s ease-out;
+    transition: all .1s ease-in;
+    top: -2px;
+    filter: drop-shadow(2px 2px black);
+}
