@@ -2,6 +2,7 @@
 
 .intro-container {
     height: 85vh;
+
 }
 
 .intro-section {
@@ -11,11 +12,12 @@
     padding-bottom: 1em;
 }
 
+
 .intro-name {
     color: var(--col-accent);
     font-family: "Comfortaa";
     font-weight: bold;
-    font-size: 4em;
+    font-size: clamp(3em, 11vw, 4em);
     margin-bottom: 0.25em;
 }
 
@@ -30,12 +32,13 @@ nav ul {
     display: flex;
     padding: 0;
     margin-top: 0;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 nav li {
-    display: inline-block;
+    display: inline-flex;
     margin: 1em;
+    flex-shrink: 1;
 }
 
 .nav-links ul {
