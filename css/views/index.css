@@ -2,21 +2,38 @@
 
 .intro-container {
     height: 85vh;
+
 }
 
 .intro-section {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
     margin: 1.5em;
-    border-bottom: solid 2px #eee;
+    margin-bottom: 0;
     padding-bottom: 1em;
 }
+
 
 .intro-name {
     color: var(--col-accent);
     font-family: "Comfortaa";
     font-weight: bold;
-    font-size: 4em;
+    font-size: clamp(3em, 11vw, 4em);
     margin-bottom: 0.25em;
+}
+
+@keyframes slideDownPronouns {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
 }
 
 .intro-pronouns {
@@ -24,6 +41,27 @@
     font-family: "Raleway";
     font-size: 1.25em;
     font-weight: 100;
+}
+
+.div-pronouns {
+    animation: slideDownPronouns 750ms;
+    margin-bottom: 1.25em;
+}
+
+@keyframes lineExtend {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+    
+}
+
+.line {
+    width: 100%;
+    animation: lineExtend 1s ease;
+    border-bottom: solid 2px #eee;
 }
 
 nav ul {
@@ -34,14 +72,41 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
-    margin: 1em;
+    display: inline-flex;
+    margin: clamp(0em, 3vw, 1em);
+    flex-shrink: 1;
 }
 
 .nav-links ul {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+}
+
+@keyframes slideInIcons {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+.nav-links li:nth-child(1) {
+    animation: slideInIcons 360ms;
+}
+.nav-links li:nth-child(2) {
+    animation: slideInIcons 520ms;
+}
+.nav-links li:nth-child(3) {
+    animation: slideInIcons 680ms;
+}
+.nav-links li:nth-child(4) {
+    animation: slideInIcons 840ms;
+}
+.nav-links li:nth-child(5) {
+    animation: slideInIcons 1s;
 }
 
 .nav-links svg {
@@ -69,3 +134,4 @@ nav li {
     top: -2px;
     filter: drop-shadow(2px 2px black);
 }
+

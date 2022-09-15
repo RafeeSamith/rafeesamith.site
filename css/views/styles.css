@@ -3,8 +3,8 @@
 /* General */
 
 :root {
-    --col-background: #151519;
-    --col-secondary: #2C2C35;
+    --col-background: #1f1f22;
+    --col-secondary: #2C2C31;
     --col-accent: #FF4C29;
 }
 
@@ -115,7 +115,8 @@ a:hover {
 }
 
 .nav-main ul {
-    padding-left: 0.5em;
+    padding-left: 0;
+    padding-right: 0.5em;
     display: flex;
     flex-wrap: nowrap;
     flex-shrink: 1;
@@ -212,8 +213,6 @@ a:hover {
     display: flex;
     height: 100%;
     background-color: var(--col-background);
-    padding-left: 2em;
-    padding-right: 2em;
     padding-top: 4em;
     justify-content: center;
 }
@@ -223,8 +222,11 @@ a:hover {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 1em;
+    min-width: 100px;
     max-width: 1080px;
-    padding: 1em;
 }
 
 .setup-container {

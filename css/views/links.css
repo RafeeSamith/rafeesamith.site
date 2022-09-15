@@ -34,6 +34,11 @@
 }
 
 .content-links {
-    max-width: 1024px;
+    padding: 0 3em 0 3em;
+    max-width: 840px;
     flex-grow: 1;
+}
+
+.setup-container {
+    height: 200px;
 }
