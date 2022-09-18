@@ -65,6 +65,7 @@
 }
 
 nav ul {
+    height: 6em;
     display: flex;
     padding: 0;
     margin-top: 0;
@@ -75,6 +76,10 @@ nav li {
     display: inline-flex;
     margin: clamp(0em, 3vw, 1em);
     flex-shrink: 1;
+}
+
+.nav-text a {
+    padding-top: ;
 }
 
 .nav-links ul {
