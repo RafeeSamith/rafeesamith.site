@@ -1,20 +1,8 @@
 /* index page */
 
-@keyframes gradient {
-	0% {
-		background-position: 100%;
-	}
-	100% {
-		background-position: unset;
-	}
-}
-
 body {
     height: 100vh;
-    /*background-image: linear-gradient(to bottom right, #010101, #2f2f33);*/
-    background-image: url(../../images/bg.png);
-    background-size: 150% 150%;
-    animation: gradient 1s ease; 
+    background-image: linear-gradient(to bottom right, #010101, #00000000)
 }
 
 .intro-container {
