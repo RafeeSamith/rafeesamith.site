@@ -1,8 +1,12 @@
 /* index page */
 
+body {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, #010101, #00000000)
+}
+
 .intro-container {
     height: 85vh;
-
 }
 
 .intro-section {
@@ -15,7 +19,6 @@
     margin-bottom: 0;
     padding-bottom: 1em;
 }
-
 
 .intro-name {
     color: var(--col-accent);
@@ -65,6 +68,7 @@
 }
 
 nav ul {
+    min-height: 5.25em;
     display: flex;
     padding: 0;
     margin-top: 0;
